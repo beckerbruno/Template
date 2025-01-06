@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Stock } from '../lib/types'
+import { Stock } from '../types/types'
 import { getFirestore, doc, updateDoc } from 'firebase/firestore'
 
 interface StockListProps {

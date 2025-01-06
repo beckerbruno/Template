@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Home, User, Settings, HelpCircle, Menu } from 'lucide-react'
-import Link from 'next/link'
+import { Link } from 'react-router-dom';
 import styles from './sidebar.module.css'
 
 interface MenuItem {
@@ -32,7 +32,7 @@ export default function Sidebar() {
         <ul className={styles.menuList}>
           {menuItems.map((item) => (
             <li key={item.name} className={styles.menuItem}>
-              <Link href={item.path} className={styles.menuLink}>
+              <Link to={item.path} className={styles.menuLink}>
                 {item.icon}
                 <span className={styles.menuText}>{item.name}</span>
               </Link>

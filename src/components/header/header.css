@@ -1,0 +1,38 @@
+.header_container {
+	background-color: #3498db; /* Substitui "bg-primary" */
+	color: #ffffff; /* Substitui "text-primary-foreground" */
+  }
+  
+  .header_content {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 24px 16px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+  }
+  
+  .link {
+	font-size: 1.5rem; /* 24px */
+	font-weight: bold;
+	text-decoration: none;
+	color: #ffffff;
+  }
+  
+  .buttons_list {
+	display: flex;
+	gap: 1rem; /* Espaçamento entre os itens */
+  }
+  
+  .header_button {
+	font-size: 1rem; /* 16px */
+	color: #ffffff;
+	text-decoration: none;
+	transition: text-decoration 0.3s ease;
+  }
+  
+  .header_button:hover {
+	text-decoration: underline;
+  }
+  
